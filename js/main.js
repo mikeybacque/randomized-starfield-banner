@@ -6,6 +6,7 @@ var height = $body.outerHeight();
 for (i = 0; i < 75; i++) {
   $star = $('<div>');
   $star.addClass('star');
+
   $star.css({
     top: Math.random() * height,
     left: Math.random() * width,
@@ -14,3 +15,8 @@ for (i = 0; i < 75; i++) {
   });
   $body.append($star);
 }
+
+var bannerHeight = $banner.outerHeight();
+var i = 0;
+var totalStars = 75
+var $newStar;
